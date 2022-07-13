@@ -1,0 +1,11 @@
+List functions used in video "Appgyver Tutorial: Visualize your data with Google Charts"
+Link: https://youtu.be/7Qby8Yav9oQ
+
+========================================================================================
+AppGyver functions
+========================================================================================
+
+FORMAT_LOCALIZED_DECIMAL(MAX(MAP(data.Users, item.mobile)), "en", 0,0)
+FORMAT_LOCALIZED_DECIMAL(MIN(MAP(data.Users, item.mobile)), "en", 0,0)
+FORMAT_LOCALIZED_DECIMAL(AVERAGE(MAP(data.Users, item.mobile)), "en", 0,0)
+REDUCE<largest,user>(data.Users, IF(user.mobile>largest.mobile, user, largest)).period
