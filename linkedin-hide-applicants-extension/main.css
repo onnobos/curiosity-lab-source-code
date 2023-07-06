@@ -1,0 +1,11 @@
+span.tvm__text--positive {
+    display: none !important;
+}
+
+li.job-card-container__applicant-count {
+    display: none !important;
+}
+
+span.jobs-unified-top-card__applicant-count {
+    display: none !important;
+}

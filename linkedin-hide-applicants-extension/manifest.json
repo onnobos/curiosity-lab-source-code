@@ -1,9 +1,8 @@
 {
     "manifest_version": 3,
     "name": "Hide Applicants Count",
-    "version": "0.0.0.1",
+    "version": "0.0.0.3",
     "description": "Extension hides applicant count in the Job section of LinkedIn. Icons designed by Freepik",
-    "permissions": ["activeTab"],
     "icons": {
       "16": "icon16.png",
       "32": "icon32.png",
@@ -12,8 +11,8 @@
     },
     "content_scripts": [
       {
-        "matches": ["*://*.linkedin.com/*"],
-        "js": ["contentScript.js"],
+        "matches": ["*://*.linkedin.com/jobs/*"],
+        "css": ["main.css"],
         "run_at": "document_idle"
       }
     ]
